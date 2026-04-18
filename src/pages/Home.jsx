@@ -1,18 +1,16 @@
 import reactLogo from '../assets/react.svg'
 import viteLogo from '../assets/vite.svg'
-import heroImg from '../assets/hero.png'
+import PopcornStamp from '../assets/PopcornStamp.png'
 import { useState } from 'react'
 
 
-export function HomePage({ activeTab }) {
+export function HomePage() {
     const [count, setCount] = useState(0);
-    console.log(activeTab)
-    if (activeTab !== "Home") return <></>;
     return (
         <>
             <section id="center">
                 <div className="hero">
-                    <img src={heroImg} className="base" width="170" height="179" alt="" loading="lazy"/>
+                    <img src={PopcornStamp} className="base" width="170" height="179" alt=""/>
                     <img src={reactLogo} className="framework" alt="React logo" />
                     <img src={viteLogo} className="vite" alt="Vite logo" />
                 </div>
