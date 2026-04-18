@@ -1,2 +1,1 @@
-# wedding_site
-Wedding Website for Chris &amp; Ryann '26
+# Wedding Website for Chris &amp; Ryann '26
