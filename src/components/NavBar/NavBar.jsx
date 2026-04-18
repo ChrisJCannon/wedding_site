@@ -10,12 +10,10 @@ export function NavBar({ tabs, setTab }) {
                     <button
                         onClick={() => {
                             setTab(tab);
-                            console.log(tab);
                         }}
                         className='navbar-button'
                         key={tab}>
                         {tab}
-                        
                     </button>
                 )}
             </div>
