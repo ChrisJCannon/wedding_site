@@ -3,6 +3,10 @@ import { useState } from 'react'
 import { HomePage } from './pages/home'
 import { NavBar } from './NavBar'
 import './App.css'
+import { Travel } from './pages/Travel'
+import { Registry } from './pages/Registry'
+import { Faq } from './pages/Faq'
+import { RSVP } from './pages/RSVP'
 
 const tabs = [
   "Home",
@@ -13,14 +17,17 @@ const tabs = [
 ]
 
 function App() {
-  
-  const [tab, setTab] = useState("Home")
 
+  const [tab, setTab] = useState("Home")
+  console.log(tab)
   return (
     <>
-    <NavBar tabs={tabs}/>
-    {<HomePage/>}
-      
+      <NavBar tabs={tabs} setTab={setTab} />
+      {tab === "Home" && <HomePage />}
+      {tab === "Travel" && <Travel />}
+      {tab === "Registry" && <Registry />}
+      {tab === "Faq" && <Faq />}
+      {tab === "RSVP" && <RSVP />}
     </>
   )
 }
