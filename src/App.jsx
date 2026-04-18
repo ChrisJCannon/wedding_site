@@ -17,7 +17,7 @@ const tabs = [
 ]
 
 function App() {
-
+  // for a lazy-loading gallery element use <img src="" loading="lazy"/>
   const [tab, setTab] = useState("Home")
   console.log(tab)
   return (
@@ -28,6 +28,7 @@ function App() {
       {tab === "Registry" && <Registry />}
       {tab === "Faq" && <Faq />}
       {tab === "RSVP" && <RSVP />}
+      
     </>
   )
 }
