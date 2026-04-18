@@ -1,3 +1,16 @@
+@font-face {
+  font-family: 'Bobara';
+  src: url('/fonts/BobaraMaster-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IM Fell DW Pica SC';
+  src: url('/fonts/IMFellDWPicaSC-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 :root {
   --text: #6b6375;
   --text-h: #08060d;
@@ -109,3 +122,45 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+
+/* Utility classes for custom colors */
+.color-black { color: #000000; }
+.bg-black { background-color: #000000; }
+
+.color-cream { color: #FFFCEF; }
+.bg-cream { background-color: #FFFCEF; }
+
+.color-orange { color: #EB8915; }
+.bg-orange { background-color: #EB8915; }
+
+.color-light-pink { color: #EFA9A9; }
+.bg-light-pink { background-color: #EFA9A9; }
+
+.color-dark-red { color: #980904; }
+.bg-dark-red { background-color: #980904; }
+
+.color-olive-green { color: #53582B; }
+.bg-olive-green { background-color: #53582B; }
+
+.color-dark-green { color: #262E01; }
+.bg-dark-green { background-color: #262E01; }
+
+.color-light-blue { color: #A9BCC3; }
+.bg-light-blue { background-color: #A9BCC3; }
+
+.color-light-green { color: #C4C39C; }
+.bg-light-green { background-color: #C4C39C; }
+
+.color-blue { color: #1C5173; }
+.bg-blue { background-color: #1C5173; }
+
+.color-red { color: #CD3238; }
+.bg-red { background-color: #CD3238; }
+
+.color-white { color: #FFFFFF; }
+.bg-white { background-color: #FFFFFF; }
+
+.bg-transparent { background-color: transparent; }
+
+.font-bobara { font-family: 'Bobara', cursive; }
+.font-im-fell { font-family: 'IM Fell DW Pica SC', serif; }

@@ -1,7 +1,7 @@
 
 import { useState } from 'react'
 import { HomePage } from './pages/home'
-import { NavBar } from './NavBar'
+import { NavBar } from './components/NavBar/NavBar'
 import './App.css'
 
 const tabs = [
