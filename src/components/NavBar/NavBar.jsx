@@ -1,21 +1,24 @@
-import logoImg from '../..//assets/hero.png'
+import './NavBar.css';
+import logoImg from '../../assets/hero.png'
 export function NavBar({ tabs, setTab }) {
 
     return (
-        <>
-            <img src={logoImg} width="50" height="50" />
-            <div style={{ margin: "25px 0px 0px 0px", justifyContent: "space-between", display: "flex", width: "50%", alignSelf: "end" }}>
+        <div className='navbar-container'>
+            <img src={logoImg} id='logo'  />
+            <div className='navbar-tabs'>
                 {tabs.map((tab) =>
                     <button
                         onClick={() => {
                             setTab(tab);
                             console.log(tab);
                         }}
+                        className='navbar-button'
                         key={tab}>
                         {tab}
+                        
                     </button>
                 )}
             </div>
-        </>
+        </div>
     )
 }

@@ -18,8 +18,8 @@ const tabs = [
 
 function App() {
 
-  const [tab, setTab] = useState("Home")
-  console.log(tab)
+  const [tab, setTab] = useState("Home");
+  
   return (
     <>
       <NavBar tabs={tabs} setTab={setTab} />
