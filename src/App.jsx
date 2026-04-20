@@ -1,6 +1,6 @@
 
 import { useState } from 'react'
-import { HomePage } from './pages/hHme'
+import { HomePage } from './pages/Home'
 import { NavBar } from './components/NavBar/NavBar'
 import './App.css'
 import { Travel } from './pages/Travel'
